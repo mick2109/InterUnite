@@ -5,6 +5,17 @@
             body {
                 background-color: lightblue;
                 text-align: center;
+                margin: 0;
+                padding: 0;
+                }
+            .logo {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            #countdown {
+                font-size: 100px; /* Augmente la taille de la police du compteur */
+                font-family: Calibri, sans-serif; /* Définit la police pour l'ensemble de la page */
             }
         </style>
         <script>
@@ -15,10 +26,10 @@
                 var countdownTimer = setInterval(function() {
                     if (timeLeft <= 0) {
                         clearInterval(countdownTimer);
-                        countdownElement.innerHTML = "Temps écoulé!";
+                        countdownElement.innerHTML = "";
                         window.location.href = "Bala02.html"; // Redirige vers Bala02.html
                     } else {
-                        countdownElement.innerHTML = timeLeft + " secondes restantes";
+                        countdownElement.innerHTML = timeLeft ;
                     }
                     timeLeft -= 1;
                 }, 1000);
@@ -28,9 +39,12 @@
         </script>
     </head>
 <body>
+<a href="Balas.svg" class="logo">
+    <img src="Sources/Balas.svg" alt="Logo" width="50" height="50">
+</a>
 <h1>Bienvenue cher baladin.
-    Nous allons tout d'abord vérifier tes compétences de baladin.
+    Nous allons tout d'abord vérifier ta patience de baladin.
 </h1>
-<p id="countdown">10 secondes restantes</p>
+<p id="countdown">10</p>
 </body>
 </html>
