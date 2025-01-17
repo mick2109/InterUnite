@@ -3,16 +3,34 @@
     <head>
         <style>
             body {
-                background-color: lightgoldenrodyellow;
+                background-color: rgb(30, 127, 203); /* Définit la couleur de fond en RGB */
                 text-align: center;
+                margin: 0;
+                padding: 0;
+                font-family: Calibri, sans-serif; /* Définit la police pour l'ensemble de la page */
+                background-image: url('Sources/Balas.svg'); /* Définit l'image de fond */
+                background-size: contain; /* Ajuste l'image pour qu'elle soit entièrement visible */
+                background-repeat: no-repeat; /* Empêche la répétition de l'image */
+                background-position: center; /* Centre l'image de fond */
+                height: 100vh; /* Assure que le corps prend toute la hauteur de la fenêtre */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;}
+                
+            .logo {
+                position: absolute;
+                top: 10px;
+                right: 10px;
             }
         </style>
        
     </head>
 <body>
-<h1>Bienvenue cher baladin.
-    Nous allons tout d'abord vérifier tes compétences de baladin.
+    <a href="index.html" class="logo">
+        <img src="Sources/Balas.svg" alt="Logo" width="50" height="50">
+    </a>
+<h1>Bravo, tu as réussi le test de patience !
 </h1>
-<p id="countdown">10 secondes restantes</p>
 </body>
 </html>
